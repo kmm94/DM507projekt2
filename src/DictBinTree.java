@@ -46,14 +46,24 @@ public class DictBinTree implements Dict {
             y.setRightChild(newNode);
         }
     }
-
+    
+    /**
+     * Traverses through the tree in inorder.
+     * @return 
+     */
     @Override
     public int[] orderedTraversal() {
         int[] nodes = new int[size];
         counter = 0;
         return  inorderTreeWalk(root, nodes);
     }
-
+    
+    /**
+     * Private method that traverses the tree inorder hereby sorting it.
+     * @param x
+     * @param a
+     * @return 
+     */
     private int[] inorderTreeWalk(Node x, int[] a) {
 
         if(x != null){
@@ -64,7 +74,12 @@ public class DictBinTree implements Dict {
         }
         return a;
     }
-
+    
+    /**
+     * Searches the tree for the nodes using the private method treeSearch().
+     * @param key
+     * @return 
+     */
     @Override
     public boolean search(int key) {
     if (treeSearch(root, key) == null){
@@ -73,7 +88,13 @@ public class DictBinTree implements Dict {
         return true;
     }
     }
-
+    
+    /**
+     * Private method that searches the tree for nodes.
+     * @param x
+     * @param key
+     * @return 
+     */
     private Node treeSearch(Node x, int key) {
 
         if (x == null || key == x.getKey()) {
