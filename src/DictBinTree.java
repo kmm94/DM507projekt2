@@ -17,7 +17,11 @@ public class DictBinTree implements Dict {
     public DictBinTree() {
         root = null;
     }
-
+    /**
+     * Inserts the nodes in the tree.
+     * @param key 
+     */
+     
     @Override
     public void insert(int key) {
         size++;
