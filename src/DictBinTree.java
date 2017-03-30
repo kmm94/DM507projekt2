@@ -21,7 +21,7 @@ public class DictBinTree implements Dict {
     /**
      * Inserts the nodes in the tree.
      *
-     * @param key
+     * @param key the note that will be inserted.
      */
     @Override
     public void insert(int key) {
@@ -49,7 +49,7 @@ public class DictBinTree implements Dict {
     /**
      * Traverses through the tree in inorder.
      *
-     * @return
+     * @return A int Array that contains all the key.
      */
     @Override
     public int[] orderedTraversal() {
@@ -61,9 +61,9 @@ public class DictBinTree implements Dict {
     /**
      * Private method that traverses the tree inorder hereby sorting it.
      *
-     * @param x
-     * @param a
-     * @return
+     * @param x Parent node
+     * @param a The int array that the key will be placed ind.
+     * @return The int array with the key in.
      */
     private int[] inorderTreeWalk(Node x, int[] a) {
 
@@ -79,8 +79,8 @@ public class DictBinTree implements Dict {
     /**
      * Searches the tree for the nodes using the private method treeSearch().
      *
-     * @param key
-     * @return
+     * @param key The key that will be searched for.
+     * @return True if the Key exists in the tree else false.
      */
     @Override
     public boolean search(int key) {
@@ -94,9 +94,9 @@ public class DictBinTree implements Dict {
     /**
      * Private method that searches the tree for nodes.
      *
-     * @param x
-     * @param key
-     * @return
+     * @param x Parent key
+     * @param key The key that will be searched for.
+     * @return The node if it exists.
      */
     private Node treeSearch(Node x, int key) {
 
