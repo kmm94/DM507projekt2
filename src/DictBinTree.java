@@ -11,7 +11,7 @@ public class DictBinTree implements Dict {
 
     private Node root;
     private int size = 0;
-    private int counter = 0;
+    private int i = 0;
 
 
     public DictBinTree() {
@@ -54,7 +54,7 @@ public class DictBinTree implements Dict {
     @Override
     public int[] orderedTraversal() {
         int[] nodes = new int[size];
-        counter = 0;
+        i = 0;
         return inorderTreeWalk(root, nodes);
     }
 
@@ -69,8 +69,8 @@ public class DictBinTree implements Dict {
 
         if (x != null) {
             inorderTreeWalk(x.getLeftChild(), a);
-            a[counter] = x.getKey();
-            counter++;
+            a[i] = x.getKey();
+            i++;
             inorderTreeWalk(x.getRightChild(), a);
         }
         return a;
