@@ -50,9 +50,9 @@ public class Node {
 
     public void setKey(int key) {
         this.key = key;
-    }
+    } // Not used
 
     public String getData() {
         return data;
-    }
+    } // Not used
 }
