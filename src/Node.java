@@ -13,7 +13,6 @@ public class Node {
     private Node leftChild = null;
     private Node rightChild = null;
     private int key;
-    private String data; //is not used in this project
 
     public Node(Node leftChild, Node rightChild, int key) {
         this.leftChild = leftChild;
@@ -23,36 +22,61 @@ public class Node {
 
     public Node() {
     }
-
+    
+    /**
+     * 
+     * @param key 
+     */
     public Node(int key) {
         this.key = key;
     }
-
+    
+    /**
+     * Returns the leftmost child of a node.
+     * @return leftChild
+     */
     public Node getLeftChild() {
         return leftChild;
     }
-
+    
+    /**
+     * Sets the leftmost childe of a node.
+     * @param leftChild 
+     */
     public void setLeftChild(Node leftChild) {
         this.leftChild = leftChild;
     }
-
+    
+    /**
+     * Returns the rightmost child of a node.
+     * @return rightChild
+     */
     public Node getRightChild() {
         return rightChild;
     }
 
+    /**
+     * Sets the rightmost child of a node.
+     * @param rightChild 
+     */
     public void setRightChild(Node rightChild) {
         this.rightChild = rightChild;
     }
 
+    /**
+     * Returns the key. 
+     * @return key
+     */
     public int getKey() {
         return key;
     }
 
+    /**
+     * Sets the key.
+     * @param key 
+     */
     public void setKey(int key) {
         this.key = key;
     }
 
-    public String getData() {
-        return data;
-    }
 }

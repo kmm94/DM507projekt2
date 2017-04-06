@@ -6,10 +6,12 @@ import java.util.Scanner;
 public class TreeSort {
     public static void main(String[] args) {
 
+        //create empty tree
         DictBinTree tree = new DictBinTree();
 
         int n = 0;
         int i;
+        //scans for input
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextInt()) {
             i = sc.nextInt();
@@ -17,7 +19,8 @@ public class TreeSort {
             tree.insert(i);
         }
         int[] nodes = tree.orderedTraversal();
-
+        
+        //prints input
         for(int k =0; k < n; k++){
             System.out.println(nodes[k]);
 
