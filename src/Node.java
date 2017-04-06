@@ -77,6 +77,6 @@ public class Node {
      */
     public void setKey(int key) {
         this.key = key;
-    }
+    } // Not used
 
 }
