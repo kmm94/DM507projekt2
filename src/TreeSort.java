@@ -16,6 +16,7 @@ public class TreeSort {
         while (sc.hasNextInt()) {
             i = sc.nextInt();
             n++;
+            // Inserts the input into the tree
             tree.insert(i);
         }
         int[] nodes = tree.orderedTraversal();
